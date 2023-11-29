@@ -1,4 +1,4 @@
-import prisma from "@/database/database-connection";
+import prisma from '@/database/database-connection';
 
 async function getGames() {
   const games = await prisma.game.findMany();
